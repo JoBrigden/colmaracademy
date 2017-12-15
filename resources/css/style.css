@@ -34,7 +34,7 @@ h2 {
 
 .image-container {
   width: 35%;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .image-container img {
@@ -48,7 +48,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .sixty-percent-container {
@@ -285,8 +285,7 @@ nav li {
 
 .thesis-container {
   display: inline-flex;
-  width: 100%
-  /*padding: 2rem 0 2rem 1.5rem;*/
+  width: 100%;
 }
 
 #thesis h1 {
@@ -297,7 +296,6 @@ nav li {
 
 .urban {
   display: block;
-  /*padding: 2rem 1.5rem;*/
 }
 
 video {
@@ -311,6 +309,7 @@ video {
 .thesis-container .forty-percent-container {
   border-left: none;
 }
+
 .exhibit {
   padding-top: 1.5rem;
   display: flex;
@@ -330,4 +329,28 @@ video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/*Footer*/
+footer {
+}
+
+footer .content {
+  display: flex;
+  color: rgb(217, 179, 16);
+  background-color: rgb(11, 60, 93);
+  padding: 1rem 1.5rem
+}
+
+footer h5 {
+  flex-grow: 1;
+}
+
+.nav-footer ul {
+  display: flex;
+  text-align: right;
+}
+
+.nav-footer {
+    color: rgb(217, 179, 16);
 }
