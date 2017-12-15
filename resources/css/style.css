@@ -223,3 +223,51 @@ nav li {
 .block h2 {
   color: rgb(217, 179, 16);
 }
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(11, 60, 93);
+  align-items: center;
+}
+
+#courses h1 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.flex-container {
+  padding: 2rem 3.5rem;
+}
+
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subject {
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 39, 49);
+  display: table-column;
+  max-width: 29.7%;
+  margin: 1rem;
+}
+
+.subject img {
+  display: block;
+  width: 100%;
+  height: 10rem;
+}
+
+.subject-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 1rem;
+}
+
+.subject h2{
+  font-size: 1.4rem;
+}
