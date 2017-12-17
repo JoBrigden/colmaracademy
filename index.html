@@ -10,21 +10,21 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="container">
-        <img alt="logo" href="index.html" src="./resources/images/logo.png" /><a>COLMAR</a><a class="blue">ACADEMY</a>
+    <header id="header">
+      <div class="container name">
+        <img alt="logo" href="index.html" src="./resources/images/logo.png" /><span>COLMAR</span><span class="blue">ACADEMY</span>
         <nav class="desktop">
           <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For companies</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#about-us">On campus</a></li>
+            <li><a href="#courses">Online</a></li>
+            <li><a href="#thesis">For companies</a></li>
+            <li><a href="#learn">Sign in</a></li>
           </ul>
         </nav>
         <nav class="mobile">
           <ul>
-            <li><a href="#"><img src="./resources/images/onCampus.png"></a></li>
-            <li><a href="#"><img src="./resources/images/online.png"></a></li>
+            <li><a href="#about-us"><img src="./resources/images/onCampus.png"></a></li>
+            <li><a href="#courses"><img src="./resources/images/online.png"></a></li>
             <li><a href="#"><img src="./resources/images/login.png"></a></li>
           </ul>
         </nav>
@@ -43,9 +43,9 @@
           <div class="sign-up">
             <h1>Learn Something New Everyday</h1>
             <h2>Lorem ipsum dolor sit amet&#44; consectetur adipiscing elit.</h2>
-            <div class="button">
-              <span>Start Here</span>
-            </div>
+          </div>
+          <div class="button">
+            <span>Start Here</span>
           </div>
         </div>
       </div>
@@ -60,7 +60,8 @@
         <div class="forty-percent-container">
           <div class="information">
             <div class="image-container">
-              <img alt="orientation" src="./resources/images/information-orientation.jpg" />
+              <img alt="orientation" class="desktop" src="./resources/images/information-orientation.jpg" />
+              <img alt="orientation" class="mobile" src="./resources/images/information-orientation-mobile.jpg" />
             </div>
             <div class="info-text">
               <h2>Orientation date</h2>
@@ -69,7 +70,8 @@
           </div>
           <div class="information">
             <div class="image-container">
-              <img alt="campus" src="./resources/images/information-campus.jpg" />
+              <img alt="campus" class="desktop" src="./resources/images/information-campus.jpg" />
+              <img alt="campus" class="mobile" src="./resources/images/information-campus-mobile.jpg" />
             </div>
             <div class="info-text">
               <h2>Our campus</h2>
@@ -78,7 +80,8 @@
           </div>
           <div class="information block">
             <div class="image-container">
-              <img alt="guest lecture" src="./resources/images/information-guest-lecture.jpg" />
+              <img alt="guest lecture" class="desktop" src="./resources/images/information-guest-lecture.jpg" />
+              <img alt="guest lecture" class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" />
             </div>
             <div class="info-text">
               <h2>Our Guest Lecture</h2>
@@ -90,49 +93,51 @@
 
       <!-- Courses -->
       <div id="courses">
-        <div class="courses-container">
-          <h1>Start Learning</h1>
-          <div class="programs">
-            <div class="subject">
-              <img alt="software engineering" src="./resources/images/course-software.jpg" />
-              <div class="subject-text">
-                <h2>Software Engineering</h2>
-                <p>COURSES<br><br>Web Development&#44; Mobile Development&#44; iOT&#44; APIs</p>
+        <div class="id-container">
+          <div class="courses-container">
+            <h1>Start Learning</h1>
+            <div class="programs">
+              <div class="subject"><a href="#">
+                <img alt="software engineering" src="./resources/images/course-software.jpg" />
+                <div class="subject-text">
+                  <h2>Software Engineering</h2>
+                  <p>COURSES<br><br>Web Development&#44; Mobile Development&#44; iOT&#44; APIs</p>
+                </div></a>
               </div>
-            </div>
-            <div class="subject">
-              <img alt="computer art" src="./resources/images/course-computer-art.jpg" />
-              <div class="subject-text">
-                <h2>Computer Art</h2>
-                <p>COURSES<br><br>Imaging &#38; Design&#44; Web Design&#44; Motion Graphics &#38; Visual Effects&#44; Computer Animation</p>
+              <div class="subject"><a href="#">
+                <img alt="computer art" src="./resources/images/course-computer-art.jpg" />
+                <div class="subject-text">
+                  <h2>Computer Art</h2>
+                  <p>COURSES<br><br>Imaging &#38; Design&#44; Web Design&#44; Motion Graphics &#38; Visual Effects&#44; Computer Animation</p>
+                </div></a>
               </div>
-            </div>
-            <div class="subject">
-              <img alt="design" src="./resources/images/course-design.jpg" />
-              <div class="subject-text">
-                <h2>Design</h2>
-                <p>COURSES<br><br>User Experience Design&#44; User Research&#44; Visual Design</p>
+              <div class="subject"><a href="#">
+                <img alt="design" src="./resources/images/course-design.jpg" />
+                <div class="subject-text">
+                  <h2>Design</h2>
+                  <p>COURSES<br><br>User Experience Design&#44; User Research&#44; Visual Design</p>
+                </div></a>
               </div>
-            </div>
-            <div class="subject">
-              <img alt="data" src="./resources/images/course-data.jpg" />
-              <div class="subject-text">
-                <h2>Data</h2>
-                <p>COURSES<br><br>Data Science&#44; Big Data&#44; SQL&#44; Data Visualization</p>
+              <div class="subject"><a href="#">
+                <img alt="data" src="./resources/images/course-data.jpg" />
+                <div class="subject-text">
+                  <h2>Data</h2>
+                  <p>COURSES<br><br>Data Science&#44; Big Data&#44; SQL&#44; Data Visualization</p>
+                </div></a>
               </div>
-            </div>
-            <div class="subject">
-              <img alt="business" src="./resources/images/course-business.jpg" />
-              <div class="subject-text">
-                <h2>Business</h2>
-                <p>COURSES<br><br>Product Development&#44; Business Development&#44; Startup</p>
+              <div class="subject"><a href="#">
+                <img alt="business" src="./resources/images/course-business.jpg" />
+                <div class="subject-text">
+                  <h2>Business</h2>
+                  <p>COURSES<br><br>Product Development&#44; Business Development&#44; Startup</p>
+                </div></a>
               </div>
-            </div>
-            <div class="subject">
-              <img alt="marketing" src="./resources/images/course-marketing.jpg" />
-              <div class="subject-text">
-                <h2>Marketing</h2>
-                <p>COURSES<br><br>Analytics&#44; Content Marketing&#44; Mobile Marketing</p>
+              <div class="subject"><a href="#">
+                <img alt="marketing" src="./resources/images/course-marketing.jpg" />
+                <div class="subject-text">
+                  <h2>Marketing</h2>
+                  <p>COURSES<br><br>Analytics&#44; Content Marketing&#44; Mobile Marketing</p>
+                </div></a>
               </div>
             </div>
           </div>
@@ -145,8 +150,10 @@
         <div class="thesis-container">
           <div class="sixty-percent-container">
             <div class="urban">
-              <video controls="play" src="./resources/videos/thesis.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+              <video id=="myVideo" controls poster="./resources/images/play-button.png" width="" height="">
+                <source src="./resources/videos/thesis.mp4" type="video/mp4" />
+                <source src="./resources/videos/thesis.webm" type="video/webm" />
+                <source src="./resources/videos/thesis.ogv" type="video/ogg" />
               </video>
             </div>
             <div class="video-text">
@@ -184,14 +191,14 @@
       </div>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer">
         <div class="content">
           <h5>&#169; 2016 Colmar Academy. All rights reserved</h5>
           <div class="nav-footer">
             <nav>
               <ul>
                 <li><a href="#" class="nav-footer">Terms</a></li>
-                <li><a href="#" class="nav-footer">Privacy</a></li>
+                <li><a href="#footer" class="nav-footer">Privacy</a></li>
               </ul>
             </nav>
           </div>

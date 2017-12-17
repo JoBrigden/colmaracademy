@@ -18,11 +18,10 @@ body {
 }
 
 h1 {
+  font-family: 'Taviraj', serif;
   font-weight: 700;
-  font-style: italic;
   font-size: 2.5rem;
   color: rgb(217, 179, 16);
-  text-shadow: 4px 4px 4px rgb(29, 39, 49);
   padding-bottom: 2rem;
 }
 
@@ -88,6 +87,10 @@ header a {
   font-weight: bold;
 }
 
+header span {
+  font-weight: bold;
+}
+
 header .blue {
   color: rgb(11, 60, 93);
 }
@@ -99,7 +102,7 @@ header .mobile {
 header nav {
   text-align: right;
   flex-grow: 1;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 header nav ul {
@@ -108,16 +111,6 @@ header nav ul {
 
 nav li {
   padding-left: 1rem;
-}
-
-@media only screen and (max-width: 480px) {
-  header .desktop {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-  }
 }
 
 /*Main content container*/
@@ -160,16 +153,18 @@ nav li {
   font-family: 'Taviraj', serif;
 }
 
-.banner-text h2{
-    padding-bottom: 2rem;
-}
-
 .sign-up {
   width: 80%;
 }
 
+.sign-up h1 {
+  font-style: italic;
+  text-shadow: 4px 4px 4px rgb(29, 39, 49);
+}
+
 .sign-up h2 {
   padding-top: 0rem;
+  padding-bottom: 2rem;
 }
 
 .button {
@@ -181,6 +176,7 @@ nav li {
   padding: 0.5rem 2rem;
   box-shadow: 4px 4px 4px rgb(29, 39, 49);
   text-align: center;
+  width: 80%;
 }
 
 /*Information*/
@@ -195,14 +191,15 @@ nav li {
 .sixty-percent-container img {
   max-width: 100%;
 }
-.sixty-percent-container h1 {
-  text-shadow: 4px 4px 4px rgb(29, 39, 49);
-}
 
 .information {
   display: inline-flex;
   width: 100%;
   border-bottom: solid 0.01rem rgb(217, 179, 16);
+}
+
+.information .mobile {
+  display: none;
 }
 
 .information h2 {
@@ -227,14 +224,17 @@ nav li {
 
 #courses {
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(11, 60, 93);
   align-items: center;
+}
+
+.id-container {
+  background-color: rgb(11, 60, 93);
 }
 
 #courses h1 {
   padding-bottom: 1rem;
   text-align: center;
+  text-shadow: 4px 4px 4px rgb(29, 39, 49);
 }
 
 .courses-container {
@@ -244,13 +244,14 @@ nav li {
 .programs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .subject {
   background-color: rgb(255, 255, 255);
   color: rgb(29, 39, 49);
   display: table-column;
-  max-width: 29.7%;
+  width: 29.7%;
   margin: 1rem;
 }
 
@@ -267,10 +268,6 @@ nav li {
   flex-direction: column;
   align-content: flex-start;
   padding: 1rem;
-}
-
-.subject h2{
-  font-size: 1.4rem;
 }
 
 /*Thesis Exhibit*/
@@ -332,14 +329,12 @@ video {
 }
 
 /*Footer*/
-footer {
-}
 
 footer .content {
   display: flex;
   color: rgb(217, 179, 16);
   background-color: rgb(11, 60, 93);
-  padding: 1rem 1.5rem
+  padding: 1rem 1.5rem;
 }
 
 footer h5 {
@@ -352,5 +347,213 @@ footer h5 {
 }
 
 .nav-footer {
+  color: rgb(217, 179, 16);
+}
+
+/*Pseudo class*/
+
+#header a:visited {
+  color: rgb(217, 179, 16);
+}
+
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(217, 179, 16);
+  transition: color 0.5s ease 0.25s;
+}
+
+.information:hover, .exhibit-info:hover {
+  background-color:rgba(11, 60, 93, 0.5);
+  filter: brightness(150%);
+  transition: background-color 1s linear 0.25s;
+}
+
+#footer a:visited {
+  color: rgb(29, 39, 49);
+}
+
+.subject:active {
+  filter: brightness(50%);
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 1009px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .subject {
+    width: 45%;
+  }
+
+  .subject h2 {
+    font-size: 1rem;
+  }
+
+  .button span {
+    font-size: 1rem;
+  }
+
+  #learn .button {
+    width: 80%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  #header .desktop {
+    display: none;
+  }
+
+  #header .mobile {
+    display: block;
+  }
+
+  header nav ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header span {
+    display: none;
+  }
+
+  .sign-up h1, .sign-up h2 {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subject h2 {
+    font-size: 1rem;
     color: rgb(217, 179, 16);
+  }
+
+  #learn {
+    flex-direction: column;
+  }
+
+  #learn .banner {
+    width: 100%;
+    padding: 0;
+  }
+
+  #learn .banner-text {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    align-items: center;
+  }
+
+  #learn .sign-up {
+    width: 100%;
+  }
+
+  #about-us .sixty-percent-container {
+    display: none;
+  }
+
+  #about-us .forty-percent-container {
+    width: 100%;
+  }
+
+  .information {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  #about-us .desktop {
+    display: none;
+  }
+
+  #about-us .mobile {
+    display: block;
+  }
+
+  .image-container {
+    width: auto;
+    padding: 1rem 1rem;
+  }
+
+  .info-text {
+    width: auto;
+    padding: 0 2rem;
+  }
+
+  #about-us .block {
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 39, 49);
+  }
+
+  #courses {
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  #courses .id-container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  #courses .courses-container {
+    padding: 0 1rem;
+  }
+
+  #courses .programs {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  #courses .subject {
+    background-color: rgb(11, 60, 93);
+    color: rgb(50, 140, 193);
+    margin: 0;
+    width: auto;
+    margin-bottom: 0.25rem;
+  }
+
+  #courses img {
+    display: none;
+  }
+
+  .subject-text p {
+    display: none;
+  }
+
+  .thesis-container {
+    display: block;
+  }
+
+  .video-text {
+    display: none;
+  }
+
+  #thesis .sixty-percent-container {
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+  }
+
+  #thesis .forty-percent-container {
+    display: none;
+  }
+
+  #footer .content {
+    padding: 1rem;
+  }
+
+  #footer .nav-footer {
+    display: none;
+  }
 }
