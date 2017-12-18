@@ -12,8 +12,6 @@ body {
 .container {
   display: flex;
   align-items: center;
-  text-align: left;
-  justify-content: center;
   height: 4rem;
 }
 
@@ -51,7 +49,6 @@ h2 {
 }
 
 .sixty-percent-container {
-  position: relative;
   width: 60%;
   padding: 2rem 1.5rem;
 }
@@ -113,12 +110,15 @@ nav li {
   padding-left: 1rem;
 }
 
+.fa {
+  color: rgb(217, 179, 16);
+}
+
 /*Main content container*/
 
 .main {
   position: relative;
   top: 4rem;
-  margin: auto;
   width: 100%;
 }
 
@@ -126,15 +126,12 @@ nav li {
 
 #learn {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
   height: auto;
   background-color: rgb(11, 60, 93);
 }
 
 .banner {
-  position: relative;
   width: 60%;
   padding: 2rem 1.5rem;
 }
@@ -183,7 +180,6 @@ nav li {
 
 #about-us {
   display: flex;
-  justify-content: flex-start;
   height: auto;
   background-color: rgb(255, 255, 255);
 }
@@ -194,7 +190,6 @@ nav li {
 
 .information {
   display: inline-flex;
-  width: 100%;
   border-bottom: solid 0.01rem rgb(217, 179, 16);
 }
 
@@ -208,7 +203,7 @@ nav li {
 
 .read-more {
   text-decoration: none;
-  color: blue;
+  color: rgb(6, 69, 173);
 }
 
 .block {
@@ -224,7 +219,6 @@ nav li {
 
 #courses {
   display: flex;
-  align-items: center;
 }
 
 .id-container {
@@ -262,11 +256,7 @@ nav li {
 }
 
 .subject-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
   flex-direction: column;
-  align-content: flex-start;
   padding: 1rem;
 }
 
@@ -274,7 +264,6 @@ nav li {
 
 #thesis {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   height: auto;
   background-color: rgb(255, 255, 255);
@@ -313,19 +302,30 @@ video {
   flex-direction: column;
 }
 
-.pieces {
-  width: 100%;
-}
-
 .exhibit-info {
   display: inline-flex;
-  width: 100%;
 }
 
-.exhibit-info img {
-  display: block;
+/*Social media*/
+
+.social {
+  display: inline-flex;
   width: 100%;
-  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.social span {
+  padding-right: 2rem;
+  color: rgb(11, 60, 93);
+  font-family: 'Tavirag', serif;
+  font-weight: 900;
+}
+
+.social .fa {
+  padding: 0 0.75rem;
+  color: rgb(11, 60, 93);
 }
 
 /*Footer*/
@@ -343,7 +343,6 @@ footer h5 {
 
 .nav-footer ul {
   display: flex;
-  text-align: right;
 }
 
 .nav-footer {
@@ -404,7 +403,6 @@ footer h5 {
   }
 
   #learn .button {
-    width: 80%;
     padding: 0;
   }
 }
@@ -495,11 +493,16 @@ footer h5 {
   #about-us .block {
     background-color: rgb(255, 255, 255);
     color: rgb(29, 39, 49);
+    border-left: solid 0.01rem rgb(217, 179, 16);
   }
 
   #courses {
     justify-content: center;
     padding: 2rem 0;
+  }
+
+  #courses h1 {
+    text-shadow: none;
   }
 
   #courses .id-container {
@@ -547,6 +550,19 @@ footer h5 {
 
   #thesis .forty-percent-container {
     display: none;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social span {
+    padding-right: 0;
+  }
+
+  .social .fa {
+    padding: 0.5rem;
   }
 
   #footer .content {
